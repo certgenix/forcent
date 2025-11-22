@@ -22,7 +22,7 @@ export default function Navbar() {
             <img 
               src={logoImage} 
               alt="ForceNT Logo" 
-              className="h-10 lg:h-10 cursor-pointer"
+              className="h-12 lg:h-14 cursor-pointer"
               onClick={() => scrollToSection('hero')}
               data-testid="img-logo"
             />
