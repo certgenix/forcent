@@ -1,3 +1,6 @@
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+
 export default function HowItWorks() {
   const steps = [
     {
@@ -36,44 +39,48 @@ export default function HowItWorks() {
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-4" data-testid="text-how-it-works-headline">
           How It Works
         </h2>
-        <p className="text-xl text-foreground text-center font-semibold mb-16" data-testid="text-how-it-works-subheadline">
+        <p className="text-xl text-foreground text-center font-semibold mb-20" data-testid="text-how-it-works-subheadline">
           90-Day Transformation
         </p>
 
-        <div className="space-y-12">
+        <div className="relative space-y-8">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="flex gap-6"
+              className="flex gap-8"
               data-testid={`step-${index}`}
             >
               <div className="flex flex-col items-center">
                 <div 
-                  className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg flex-shrink-0"
+                  className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-2xl flex-shrink-0 shadow-lg"
                   data-testid={`badge-step-${index}`}
                 >
                   {step.number}
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="w-0.5 flex-1 bg-border mt-4" data-testid={`line-${index}`} />
+                  <div className="w-1 flex-1 bg-border mt-6 mb-2" data-testid={`line-${index}`} />
                 )}
               </div>
               
-              <div className="flex-1 pb-8">
-                <div className="flex items-baseline gap-3 mb-2">
-                  <h3 className="text-2xl font-semibold text-foreground" data-testid={`text-step-title-${index}`}>
-                    {step.title}
-                  </h3>
-                  <span className="text-muted-foreground" data-testid={`text-step-subtitle-${index}`}>
-                    {step.subtitle}
-                  </span>
-                </div>
-                <p className="text-muted-foreground leading-relaxed mb-2" data-testid={`text-step-description-${index}`}>
-                  {step.description}
-                </p>
-                <p className="text-sm text-muted-foreground font-medium" data-testid={`text-step-time-${index}`}>
-                  {step.time}
-                </p>
+              <div className="flex-1 pb-6">
+                <Card className="p-6">
+                  <CardContent className="p-0">
+                    <div className="flex flex-wrap items-baseline gap-3 mb-3">
+                      <h3 className="text-2xl font-bold text-foreground" data-testid={`text-step-title-${index}`}>
+                        {step.title}
+                      </h3>
+                      <Badge variant="secondary" className="text-sm" data-testid={`text-step-subtitle-${index}`}>
+                        {step.subtitle}
+                      </Badge>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-3 text-base" data-testid={`text-step-description-${index}`}>
+                      {step.description}
+                    </p>
+                    <p className="text-sm text-muted-foreground font-semibold" data-testid={`text-step-time-${index}`}>
+                      {step.time}
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           ))}
