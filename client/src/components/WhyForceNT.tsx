@@ -29,7 +29,7 @@ export default function WhyForceNT() {
           Why ForceNT
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 gap-20 mb-12">
           <div>
             <h3 className="text-xl font-semibold text-foreground mb-6 text-center md:text-left" data-testid="text-why-not-title">
               We're Not:
