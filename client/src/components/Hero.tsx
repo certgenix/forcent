@@ -1,6 +1,5 @@
 import GradientButton from './GradientButton';
 import OutlineButton from './OutlineButton';
-import heroImage from '@assets/generated_images/wide_white_background_tech_visual.png';
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -13,7 +12,7 @@ export default function Hero() {
   return (
     <section id="hero" className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="max-w-3xl mx-auto">
           <div>
             <p className="text-sm text-muted-foreground font-medium mb-6" data-testid="text-pre-headline">
               For Growing Businesses Ready to Scale Smarter
@@ -46,15 +45,6 @@ export default function Hero() {
             <p className="text-sm text-muted-foreground" data-testid="text-trust-line">
               Built for professional services, e-commerce, SaaS, and agencies with $500K–$20M in revenue.
             </p>
-          </div>
-          
-          <div className="flex items-center">
-            <img 
-              src={heroImage} 
-              alt="Abstract geometric visualization" 
-              className="w-full h-auto animate-fade-in"
-              data-testid="img-hero-visual"
-            />
           </div>
         </div>
       </div>
