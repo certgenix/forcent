@@ -83,9 +83,12 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
+      },
+      backgroundImage: {
+        'gradient-brand': 'linear-gradient(135deg, #00BFFF 0%, #2563EB 50%, #7A5BFF 100%)',
       },
       keyframes: {
         "accordion-down": {
@@ -96,10 +99,20 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "pulse-widget": {
+          "0%, 100%": { boxShadow: "0 4px 12px rgba(0, 191, 255, 0.3)" },
+          "50%": { boxShadow: "0 8px 24px rgba(0, 191, 255, 0.5)" },
+        },
+        "fade-in": {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-widget": "pulse-widget 4s ease-in-out infinite",
+        "fade-in": "fade-in 0.6s ease-out",
       },
     },
   },
