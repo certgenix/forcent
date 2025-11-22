@@ -13,8 +13,8 @@ export default function Hero() {
   return (
     <section id="hero" className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
-        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
-          <div className="lg:col-span-3">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div>
             <p className="text-sm text-muted-foreground font-medium mb-6" data-testid="text-pre-headline">
               For Growing Businesses Ready to Scale Smarter
             </p>
@@ -48,7 +48,7 @@ export default function Hero() {
             </p>
           </div>
           
-          <div className="lg:col-span-2">
+          <div>
             <img 
               src={heroImage} 
               alt="Abstract geometric visualization" 
