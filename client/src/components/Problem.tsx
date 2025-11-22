@@ -1,6 +1,6 @@
 export default function Problem() {
   return (
-    <section id="problem" className="bg-muted py-20 lg:py-32">
+    <section id="problem" className="bg-muted py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20 text-center">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground mb-6" data-testid="text-problem-headline">
           You've Outgrown Your Systems. They Haven't Grown With You.

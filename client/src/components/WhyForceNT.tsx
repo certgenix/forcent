@@ -1,6 +1,6 @@
 export default function WhyForceNT() {
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section className="bg-muted py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20 text-center">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground mb-12" data-testid="text-why-headline">
           Why ForceNT

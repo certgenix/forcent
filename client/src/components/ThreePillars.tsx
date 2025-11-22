@@ -24,13 +24,13 @@ export default function ThreePillars() {
   ];
 
   return (
-    <section className="bg-muted py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32 border-t border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
         <div className="grid md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => (
             <Card 
               key={index}
-              className="p-10 bg-white border border-card-border hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+              className="p-10 border border-card-border hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
               style={{ animationDelay: `${index * 150}ms` }}
               data-testid={`card-pillar-${index}`}
             >

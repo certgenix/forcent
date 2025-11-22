@@ -14,7 +14,7 @@ export default function FinalCTA({ onOpenChat }: FinalCTAProps) {
   ];
 
   return (
-    <section className="bg-muted py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20 text-center">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground mb-6" data-testid="text-final-cta-headline">
           Ready to Scale Smarter?
@@ -32,7 +32,7 @@ export default function FinalCTA({ onOpenChat }: FinalCTAProps) {
           Start the Conversation
         </GradientButton>
 
-        <div className="bg-white border border-card-border rounded-xl p-8">
+        <div className="bg-muted border border-card-border rounded-xl p-8">
           <h3 className="text-xl font-semibold text-foreground mb-6" data-testid="text-final-cta-benefits-title">
             What You Get:
           </h3>

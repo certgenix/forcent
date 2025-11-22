@@ -1,6 +1,6 @@
 export default function Investment() {
   return (
-    <section id="investment" className="bg-muted py-20 lg:py-32">
+    <section id="investment" className="bg-white py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-16" data-testid="text-investment-headline">
           Investment

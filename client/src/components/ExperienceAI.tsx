@@ -8,7 +8,7 @@ interface ExperienceAIProps {
 
 export default function ExperienceAI({ onOpenChat }: ExperienceAIProps) {
   return (
-    <section id="experience" className="bg-[#0F1B3D] py-20 lg:py-32">
+    <section id="experience" className="bg-[#0F1B3D] py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20 text-center">
         <div className="flex justify-center mb-8">
           <div className="relative">

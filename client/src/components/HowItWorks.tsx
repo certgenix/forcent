@@ -31,7 +31,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="bg-white py-20 lg:py-32">
+    <section id="how-it-works" className="bg-muted py-20 lg:py-32 border-t border-border">
       <div className="max-w-5xl mx-auto px-6 lg:px-20">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-4" data-testid="text-how-it-works-headline">
           How It Works

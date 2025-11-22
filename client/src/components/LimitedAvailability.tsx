@@ -1,6 +1,6 @@
 export default function LimitedAvailability() {
   return (
-    <section className="bg-muted py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-6" data-testid="text-limited-headline">
           Limited Availability
@@ -10,7 +10,7 @@ export default function LimitedAvailability() {
           We're currently working with our first 10 clients to build proven systems and case studies.
         </p>
 
-        <div className="bg-white border border-card-border rounded-xl p-10">
+        <div className="bg-muted border border-card-border rounded-xl p-10">
           <h3 className="text-xl font-semibold text-foreground mb-6" data-testid="text-limited-means-title">
             What this means:
           </h3>
