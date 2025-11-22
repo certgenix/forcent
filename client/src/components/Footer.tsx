@@ -1,4 +1,4 @@
-import logoImage from '@assets/logo2_1763802557343.png';
+import logoImage from '@assets/logo3_1763807336531.png';
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {

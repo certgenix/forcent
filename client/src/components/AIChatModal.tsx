@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { X, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import logoImage from '@assets/logo2_1763802557343.png';
+import logoImage from '@assets/logo3_1763807336531.png';
 
 interface AIChatModalProps {
   isOpen: boolean;

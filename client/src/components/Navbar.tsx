@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import GradientButton from './GradientButton';
-import logoImage from '@assets/logo2_1763802557343.png';
+import logoImage from '@assets/logo3_1763807336531.png';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
