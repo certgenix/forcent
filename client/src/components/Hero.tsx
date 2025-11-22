@@ -21,7 +21,7 @@ export default function Hero() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-white/80" />
+      <div className="absolute inset-0 bg-white/90" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-20 z-10">
         <div className="max-w-3xl mx-auto">
           <div>
