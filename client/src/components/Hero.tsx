@@ -1,6 +1,6 @@
 import GradientButton from './GradientButton';
 import OutlineButton from './OutlineButton';
-import heroImage from '@assets/generated_images/premium_geometric_technology_visual.png';
+import heroImage from '@assets/generated_images/bright_saas_hero_illustration.png';
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -48,13 +48,15 @@ export default function Hero() {
             </p>
           </div>
           
-          <div>
-            <img 
-              src={heroImage} 
-              alt="Abstract geometric visualization" 
-              className="w-full h-auto animate-fade-in"
-              data-testid="img-hero-visual"
-            />
+          <div className="flex items-center justify-center lg:justify-end">
+            <div className="relative w-full max-w-[600px] aspect-[4/3]">
+              <img 
+                src={heroImage} 
+                alt="Abstract geometric visualization" 
+                className="w-full h-full object-contain animate-fade-in"
+                data-testid="img-hero-visual"
+              />
+            </div>
           </div>
         </div>
       </div>
