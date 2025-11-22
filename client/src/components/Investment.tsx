@@ -12,7 +12,7 @@ export default function Investment() {
               What It Costs:
             </h3>
             <p className="text-lg text-muted-foreground" data-testid="text-investment-cost-value">
-              Most clients: $5K–$15K/month, depending on scope.
+              Most clients: $1K–$8K/month, depending on scope.
             </p>
           </div>
 
