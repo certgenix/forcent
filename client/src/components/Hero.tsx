@@ -1,6 +1,6 @@
 import GradientButton from './GradientButton';
 import OutlineButton from './OutlineButton';
-import heroImage from '@assets/generated_images/clean_geometric_hero_visual.png';
+import heroImage from '@assets/generated_images/premium_geometric_technology_visual.png';
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
