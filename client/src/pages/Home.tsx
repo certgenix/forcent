@@ -10,7 +10,6 @@ import Investment from '@/components/Investment';
 import WhyForceNT from '@/components/WhyForceNT';
 import LimitedAvailability from '@/components/LimitedAvailability';
 import ExperienceAI from '@/components/ExperienceAI';
-import Guarantee from '@/components/Guarantee';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
 import FloatingWidget from '@/components/FloatingWidget';
@@ -40,7 +39,6 @@ export default function Home() {
       <WhyForceNT />
       <LimitedAvailability />
       <ExperienceAI onOpenChat={handleOpenChat} />
-      <Guarantee />
       <FinalCTA onOpenChat={handleOpenChat} />
       <Footer />
       <FloatingWidget onClick={handleOpenChat} />
