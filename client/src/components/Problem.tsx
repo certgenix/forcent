@@ -1,19 +1,7 @@
-import problemImage from '@assets/image_1763805702322.png';
-
 export default function Problem() {
   return (
-    <section 
-      id="problem" 
-      className="relative py-20 lg:py-32 overflow-hidden"
-      style={{
-        backgroundImage: `url(${problemImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      <div className="absolute inset-0 bg-white/85" />
-      <div className="relative max-w-4xl mx-auto px-6 lg:px-20 text-center z-10">
+    <section id="problem" className="bg-muted py-20 lg:py-32">
+      <div className="max-w-4xl mx-auto px-6 lg:px-20 text-center">
         <h2 className="text-3xl lg:text-[36px] font-bold text-foreground mb-6" data-testid="text-problem-headline">
           You've Outgrown Your Systems. They Haven't Grown With You.
         </h2>
