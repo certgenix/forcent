@@ -7,29 +7,28 @@ export default function Solution() {
       icon: Users,
       title: 'Virtual Employees',
       points: [
-        'AI agents trained on your business.',
-        'Handle sales, support, scheduling—24/7.',
-        'Cost: 90% less than full-time hires.'
-      ]
+        'AI agents trained on your business',
+        'Handle sales, support, scheduling—24/7'
+      ],
+      result: 'Cost: 90% less than full-time hires'
     },
     {
       icon: Zap,
       title: 'Autonomous Workflows',
       points: [
-        'Eliminate manual tasks.',
-        'Follow-ups, reporting, and data entry run automatically.',
-        'Result: 20+ hours back per week.'
-      ]
+        'Eliminate manual tasks automatically',
+        'Follow-ups, reporting, and data entry run on autopilot'
+      ],
+      result: '20+ hours back per week'
     },
     {
       icon: Brain,
       title: 'Intelligent Systems',
       points: [
-        'Everything connects: Sales → Operations → Support.',
-        'No gaps.',
-        'No delays.',
-        'Result: Scale 3×–10× without adding people.'
-      ]
+        'Everything connects: Sales → Operations → Support',
+        'No gaps, no delays, no manual handoffs'
+      ],
+      result: 'Scale 3×–10× without adding people'
     }
   ];
 
@@ -49,28 +48,41 @@ export default function Solution() {
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="p-10 border border-card-border hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+              className="p-8"
               data-testid={`card-solution-${index}`}
             >
-              <feature.icon 
-                className="w-8 h-8 text-primary mb-6" 
-                strokeWidth={2}
-                data-testid={`icon-solution-${index}`}
-              />
-              <h3 className="text-xl font-semibold text-foreground mb-4" data-testid={`text-solution-title-${index}`}>
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <feature.icon 
+                    className="w-8 h-8 text-primary" 
+                    strokeWidth={2}
+                    data-testid={`icon-solution-${index}`}
+                  />
+                </div>
+              </div>
+              
+              <h3 className="text-xl font-semibold text-foreground text-center mb-6" data-testid={`text-solution-title-${index}`}>
                 {feature.title}
               </h3>
-              <ul className="space-y-2">
+              
+              <ul className="space-y-3 mb-6">
                 {feature.points.map((point, pointIndex) => (
                   <li 
                     key={pointIndex}
-                    className="text-muted-foreground leading-relaxed"
+                    className="text-muted-foreground leading-relaxed flex items-start gap-2"
                     data-testid={`text-solution-point-${index}-${pointIndex}`}
                   >
-                    {point}
+                    <span className="text-primary mt-1.5">•</span>
+                    <span>{point}</span>
                   </li>
                 ))}
               </ul>
+              
+              <div className="pt-4 border-t border-border">
+                <p className="text-center font-semibold text-primary" data-testid={`text-solution-result-${index}`}>
+                  {feature.result}
+                </p>
+              </div>
             </Card>
           ))}
         </div>
