@@ -39,7 +39,7 @@ export default function ExperienceAI({ onOpenChat }: ExperienceAIProps) {
             Talk to Our Virtual Employee
           </GradientButton>
           <OutlineButton 
-            className="border-white text-white hover:bg-white/10 hover:border-white"
+            className="border-white/80 text-white backdrop-blur-sm bg-white/10 hover:border-white hover:bg-white/20 hover:text-white"
             onClick={() => console.log('Schedule call clicked')}
             data-testid="button-experience-secondary"
           >

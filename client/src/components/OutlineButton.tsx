@@ -9,7 +9,7 @@ export default function OutlineButton({ children, className = "", ...props }: Ou
   return (
     <Button
       variant="outline"
-      className={`border-2 border-white/80 text-white font-semibold px-8 py-3.5 h-auto rounded-lg backdrop-blur-sm bg-white/10 hover:border-white hover:bg-white/20 transition-all duration-200 ${className}`}
+      className={`border-2 border-border text-foreground font-semibold px-8 py-3.5 h-auto rounded-lg hover:border-primary hover:text-primary hover:bg-blue-50 dark:hover:bg-blue-950 transition-all duration-200 ${className}`}
       {...props}
     >
       {children}
