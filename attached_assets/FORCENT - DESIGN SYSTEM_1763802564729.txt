@@ -1,0 +1,447 @@
+FORCENT - DESIGN SYSTEM (UPDATED WITH LOGO GRADIENT)
+
+1. COLOR PALETTE
+Brand Gradient (From Logo)
+Cyan to Purple: #00BFFF → #2563EB → #7A5BFF
+Usage: Logo, Primary CTAs, Floating Widget only
+Nowhere else. Keep the rest clean.
+
+Primary Colors
+Navy: #0F1B3D (Headings, primary text)
+Blue: #2563EB (Links, accents, icons)
+White: #FFFFFF (Backgrounds, cards)
+Neutral Grays
+Text Dark: #1F2937 (Body copy)
+Text Medium: #6B7280 (Supporting text)
+Text Light: #9CA3AF (Captions, labels)
+Border: #E5E7EB (Dividers, card borders)
+Background: #F9FAFB (Alternate section backgrounds)
+Accent
+Success Green: #10B981 (Checkmarks, success states)
+
+USAGE RULES:
+✅ Gradient only on: Logo, Primary CTA buttons, Floating widget
+✅ White backgrounds for 90% of page
+✅ Light gray (#F9FAFB) for alternating sections
+✅ Blue (#2563EB) for links and icons
+✅ Navy for all headlines
+✅ No gradient anywhere else
+Result: Logo feels integrated, page stays clean.
+
+2. TYPOGRAPHY
+(No changes - same as before)
+Font Family: Inter
+Fallback: system-ui, -apple-system, sans-serif
+Font Sizes (Desktop):
+
+H1: 56px
+H2: 36px
+H3: 24px
+Body Large: 18px
+Body: 16px
+Small: 14px
+
+Font Sizes (Mobile):
+
+H1: 36px
+H2: 28px
+H3: 20px
+Body: 16px
+
+Font Weights:
+
+Headlines (H1, H2): 700
+H3: 600
+Body: 400
+CTAs: 600
+Labels: 500
+
+Line Height:
+
+Headlines: 1.2
+Body: 1.6
+
+
+3. SPACING SYSTEM
+(No changes - same as before)
+Section Spacing:
+
+Between sections: 120px (desktop), 80px (mobile)
+Section padding: 80px (desktop), 60px (mobile)
+Container max-width: 1280px
+Container padding: 80px (desktop), 24px (mobile)
+
+Element Spacing:
+
+Headline to subheadline: 24px
+Text to CTA: 40px
+Between cards: 32px
+Card padding: 40px
+List items: 16px
+
+
+4. BUTTON DESIGN
+Primary CTA (WITH GRADIENT)
+Style:
+
+Background: Gradient linear-gradient(135deg, #00BFFF 0%, #2563EB 50%, #7A5BFF 100%)
+Text: White, 16px, semibold (600)
+Padding: 16px 32px
+Border-radius: 8px
+Height: 52px
+No border
+
+Hover:
+
+Background: Same gradient but brighter (increase brightness 10%)
+Transform: translateY(-2px)
+Shadow: 0 8px 16px rgba(0, 191, 255, 0.3)
+Transition: 0.2s ease
+
+Active:
+
+Transform: translateY(0)
+Shadow: none
+
+
+Secondary CTA
+Style:
+
+Background: Transparent
+Border: 2px solid #E5E7EB
+Text: Navy #0F1B3D, 16px, semibold
+Padding: 14px 32px
+Border-radius: 8px
+
+Hover:
+
+Border color: Blue #2563EB
+Text color: Blue #2563EB
+Background: #F0F7FF (very light blue)
+
+
+Text Link
+Style:
+
+Color: Blue #2563EB
+Underline: only on hover
+Font-weight: 500
+
+
+5. CARD DESIGN
+(No changes - same as before)
+Standard Card:
+
+Background: White
+Border: 1px solid #E5E7EB
+Border-radius: 12px
+Padding: 40px
+Shadow: 0 1px 3px rgba(0,0,0,0.05)
+
+Hover:
+
+Shadow: 0 4px 12px rgba(0,0,0,0.08)
+Transform: translateY(-4px)
+Border color: #D1D5DB
+Transition: 0.3s ease
+
+No gradients on cards.
+
+6. HERO SECTION
+Layout:
+
+Two-column (60% text / 40% visual)
+Background: White
+Min-height: 600px
+
+Visual (Right Side):
+
+Abstract geometric illustration
+Colors: Navy + Blue shapes (no gradient in illustration)
+Animation: Slow fade-in on load (1s)
+
+Logo Placement:
+
+Top-left navigation bar
+Full-color gradient logo
+Height: 40px (desktop), 32px (mobile)
+
+Text:
+
+Headline: Navy #0F1B3D, 56px, bold
+Subheadline: Gray #6B7280, 18px
+Primary CTA: Gradient button
+Secondary CTA: Outline button
+Trust line: Gray #9CA3AF, 14px
+
+
+7. NAVIGATION BAR
+Design:
+
+Background: White
+Border-bottom: 1px solid #E5E7EB
+Sticky/fixed on scroll
+Height: 80px
+Padding: 0 80px (desktop), 0 24px (mobile)
+
+Logo:
+
+Left side
+Full-color gradient version
+Links to homepage
+
+Nav Links:
+
+Right side (desktop)
+Color: Navy #0F1B3D
+Hover: Blue #2563EB
+Font: 16px, medium (500)
+Spacing: 32px between links
+
+Primary CTA in Nav:
+
+Gradient button (same as hero)
+Text: "Talk to Our Virtual Employee" or "Get Started"
+Placed at far right
+
+Mobile:
+
+Hamburger menu
+Gradient accent on open menu icon
+
+
+8. SECTION BACKGROUNDS
+(No changes - same as before)
+Alternating:
+
+White: Hero, Solution, How It Works, Final CTA
+Light gray #F9FAFB: Problem, Three Pillars, Investment
+
+
+9. ICONS
+(No changes - same as before)
+Style:
+
+Line icons (2px stroke)
+Size: 32px (section), 24px (inline)
+Color: Blue #2563EB (solid, no gradient)
+Set: Heroicons, Lucide, or Phosphor
+
+Usage:
+
+Icons for Three Pillars
+Process step icons
+Checkmarks (green #10B981)
+
+No gradient on icons.
+
+10. THREE PILLARS SECTION
+Background: Light gray #F9FAFB
+Card Design:
+
+White background
+Border: 1px solid #E5E7EB
+Icon at top: Blue #2563EB (no gradient)
+Headline: Navy, 24px, semibold
+Body: Gray, 16px
+Result metric: Bold at bottom
+Padding: 40px
+
+Animation:
+
+Fade in on scroll
+Stagger 150ms between cards
+
+No gradient on cards.
+
+11. HOW IT WORKS SECTION
+(No changes - same as before)
+Vertical Timeline:
+
+Number badges: Blue #2563EB background (no gradient)
+Connecting line: Light gray
+Active step: Line turns blue
+Text: Navy headlines, gray body
+
+
+12. EXPERIENCE AI SECTION
+Background: Navy #0F1B3D (dark section)
+Content:
+
+White text
+Gradient CTA button (stands out on dark)
+Microphone icon: White with subtle blue glow
+
+Animation:
+
+Icon pulse every 3 seconds (subtle)
+
+
+13. FLOATING WIDGET
+Design:
+
+Position: Fixed, bottom-right, 24px from edges
+Size: 64px diameter circle
+Background: Gradient linear-gradient(135deg, #00BFFF, #2563EB, #7A5BFF)
+Icon: White microphone (24px)
+Shadow: 0 4px 12px rgba(0, 191, 255, 0.3)
+
+Badge:
+
+"Live 24/7" pill above widget
+Background: White
+Text: Blue, 12px, semibold
+Border: 1px solid #E5E7EB
+
+Animation:
+
+Pulse every 4 seconds (shadow expands)
+Hover: Scale 1.1, brighter shadow
+Click: Opens modal
+
+This widget gets the gradient to match the logo and draw attention.
+
+14. MODAL/PANEL (AI Chat)
+Design:
+
+Slides from right
+Width: 400px (desktop), full-screen (mobile)
+Background: White
+Shadow: 0 0 40px rgba(0,0,0,0.15)
+
+Header:
+
+Background: Light gray #F9FAFB
+Title: "ForceNT Virtual Employee"
+Logo: Small gradient version (24px height)
+Status: Green dot + "Online Now"
+Close: X button (top-right)
+
+Content:
+
+Chat bubbles: Blue #2563EB for AI (no gradient)
+User bubbles: Light gray
+Send button: Gradient (same as primary CTA)
+
+
+15. FOOTER
+(No changes - same as before)
+Design:
+
+Background: White
+Border-top: 1px solid #E5E7EB
+Padding: 60px 0 40px
+
+Logo:
+
+Gradient version (small, 32px height)
+Left side with tagline below
+
+Links:
+
+Gray #6B7280, 14px
+Hover: Blue
+Three columns: Company / Connect / Legal
+
+
+16. ANIMATIONS
+(No changes - same as before)
+Allowed:
+
+Fade-in on scroll
+Button hover lift
+Card hover lift
+Widget pulse (every 4 seconds)
+Timeline step highlight
+
+Forbidden:
+❌ Floating particles
+❌ Wave animations
+❌ Rotating text
+❌ Auto-playing videos
+❌ Complex background gradients
+Timing:
+
+Transitions: 0.2-0.3s ease
+Fade-ins: 0.6s ease-out
+Stagger: 150ms
+
+
+17. GRADIENT USAGE SUMMARY
+✅ WHERE TO USE THE GRADIENT:
+
+Logo (full-color, everywhere)
+Primary CTA buttons (all instances)
+Floating AI widget (circle background)
+Send button in chat modal
+Accent on hamburger menu icon (optional, mobile)
+
+❌ WHERE NOT TO USE GRADIENT:
+
+Headings
+Section backgrounds
+Cards
+Icons
+Links
+Secondary buttons
+Borders
+Text
+Illustrations
+
+Rule: Gradient = action/interaction. Everything else = clean.
+
+18. ACCESSIBILITY
+(No changes - same as before)
+Contrast:
+
+Gradient buttons with white text: ✅ Passes WCAG AA
+Navy on white: ✅
+Blue on white: ✅
+
+Interactive:
+
+Focus: Blue outline 2px solid #2563EB
+Keyboard navigable
+Alt text on images
+ARIA labels
+
+
+19. LOGO VARIATIONS
+Full-Color (Primary):
+
+Gradient icon + Navy wordmark
+Use on white/light backgrounds
+Navigation, hero, footer
+
+White Version:
+
+White icon + white wordmark
+Use on dark backgrounds (Experience AI section if logo appears)
+
+Icon Only:
+
+Gradient "F" mark
+Use in: Favicon, app icon, social media avatar
+Min size: 32px
+
+Don't:
+
+Don't change gradient colors
+Don't add drop shadows
+Don't rotate or distort
+Don't place on busy backgrounds
+
+
+20. FINAL DESIGN PRINCIPLES
+The 5 Rules:
+
+Gradient = Attention
+Only use it where you want users to click/interact.
+Whitespace > Color
+Let breathing room do the work.
+Less is More
+Resist the urge to add gradient everywhere.
+Consistency Builds Trust
+Use same gradient formula every time.
+Logo Anchors the Brand
+Let the logo carry the color story. Design stays clean.
