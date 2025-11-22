@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import GradientButton from './GradientButton';
-import logoImage from '@assets/logo_48x48_1763806857364.png';
+import logoImage from '@assets/logo2_1763802557343.png';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ export default function Navbar() {
             <img 
               src={logoImage} 
               alt="ForceNT Logo" 
-              className="h-12 lg:h-16 cursor-pointer"
+              className="h-20 lg:h-24 cursor-pointer"
               onClick={() => scrollToSection('hero')}
               data-testid="img-logo"
             />
