@@ -16,7 +16,7 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="ForceNT Logo" 
-              className="h-8 mb-4"
+              className="h-6 mb-4"
               data-testid="img-footer-logo"
             />
             <p className="text-sm text-muted-foreground" data-testid="text-footer-tagline">

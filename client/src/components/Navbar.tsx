@@ -17,12 +17,12 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-20">
-        <div className="flex items-center justify-between h-24 lg:h-28">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex items-center">
             <img 
               src={logoImage} 
               alt="ForceNT Logo" 
-              className="h-20 lg:h-24 cursor-pointer"
+              className="h-10 lg:h-12 cursor-pointer"
               onClick={() => scrollToSection('hero')}
               data-testid="img-logo"
             />

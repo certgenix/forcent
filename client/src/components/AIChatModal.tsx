@@ -49,7 +49,7 @@ export default function AIChatModal({ isOpen, onClose }: AIChatModalProps) {
               <img 
                 src={logoImage} 
                 alt="ForceNT" 
-                className="h-6"
+                className="h-5"
                 data-testid="img-chat-logo"
               />
               <div className="flex items-center gap-2">
