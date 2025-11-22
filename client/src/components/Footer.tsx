@@ -1,4 +1,4 @@
-import logoImage from '@assets/logo2_1763802557343.png';
+import logoImage from '@assets/logo_48x48_1763806857364.png';
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -16,7 +16,7 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="ForceNT Logo" 
-              className="h-8 mb-4"
+              className="h-10 mb-4"
               data-testid="img-footer-logo"
             />
             <p className="text-sm text-muted-foreground" data-testid="text-footer-tagline">
