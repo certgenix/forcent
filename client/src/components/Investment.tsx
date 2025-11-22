@@ -6,8 +6,8 @@ export default function Investment() {
           Investment
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="border border-border rounded-lg p-8 bg-white">
             <h3 className="text-xl font-semibold text-foreground mb-4" data-testid="text-investment-cost-title">
               What It Costs:
             </h3>
@@ -16,7 +16,7 @@ export default function Investment() {
             </p>
           </div>
 
-          <div>
+          <div className="border border-border rounded-lg p-8 bg-white">
             <h3 className="text-xl font-semibold text-foreground mb-4" data-testid="text-investment-return-title">
               What You Get Back:
             </h3>
