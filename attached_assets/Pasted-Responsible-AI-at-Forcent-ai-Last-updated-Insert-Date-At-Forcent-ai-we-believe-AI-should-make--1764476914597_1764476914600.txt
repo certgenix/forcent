@@ -1,0 +1,154 @@
+Responsible AI at Forcent.ai
+
+Last updated: [Insert Date]
+
+At Forcent.ai, we believe AI should make businesses more efficient without replacing human judgment, harming trust, or creating risk.
+This page explains our approach to building and deploying AI responsibly.
+
+Our commitment is simple:
+AI should help people, not replace them.
+
+1. Human in the Loop (Always)
+
+AI speeds up work, but people remain in control.
+
+We design all systems so that:
+
+AI assists with tasks, but humans make final decisions
+
+Important actions (like approvals, sensitive responses, or major changes) always involve a person
+
+Businesses can override, correct, or adjust AI outputs at any time
+
+AI should support your team — not make decisions for them.
+
+2. Transparency
+
+We communicate clearly about:
+
+What our AI does
+
+What it does not do
+
+What data it uses
+
+How its recommendations are generated
+
+We avoid “black box” solutions.
+You always know when and how AI is used in your workflow.
+
+3. Data Privacy & Security
+
+We follow strict privacy and security practices:
+
+We do not sell your data
+
+We only use the information needed to provide our services
+
+Sensitive information is protected with secure storage and encrypted communication
+
+You control what data you want to share or remove
+
+Your data belongs to you, not us.
+
+4. Fairness & Bias Reduction
+
+We take steps to reduce unfair or biased outcomes by:
+
+Avoiding the use of personal or sensitive demographic data
+
+Testing AI outputs for consistency and fairness
+
+Allowing humans to review or correct AI recommendations
+
+Our goal is to ensure AI behaves consistently and responsibly for all users.
+
+5. Accuracy & Reliability
+
+AI is powerful, but not perfect.
+We design Forcent.ai systems with:
+
+Regular monitoring
+
+Quality checks
+
+Human oversight
+
+Continuous improvement
+
+We openly acknowledge limitations and work to keep improving accuracy.
+
+6. No Full Automation of Critical Tasks
+
+AI should enhance, not replace, important business functions such as:
+
+Legal decisions
+
+Medical diagnoses
+
+Financial approvals
+
+Safety-critical operations
+
+Forcent.ai solutions never automate these without human involvement.
+
+7. Customer Control
+
+You remain in full control of:
+
+When AI is used
+
+What tasks AI performs
+
+What data it can access
+
+When you want to turn it off
+
+We believe responsible AI means giving businesses power, not taking it away.
+
+8. Continuous Improvement
+
+Responsible AI is not a one-time checklist.
+We regularly update our practices to:
+
+Adapt to new regulations
+
+Improve safety
+
+Enhance transparency
+
+Reduce bias
+
+Maintain the highest ethical standards
+
+We stay aligned with industry guidelines and best practices.
+
+9. Honest Limitations
+
+AI can:
+
+Automate repetitive tasks
+
+Speed up operations
+
+Improve consistency
+
+Provide recommendations
+
+But AI cannot:
+
+Fully replace human judgment
+
+Guarantee perfect accuracy
+
+Understand human context the way people can
+
+We commit to being honest about what our AI can and cannot do.
+
+Questions or Concerns?
+
+If you have any questions about our Responsible AI practices, contact us at:
+
+📧 support@forcent.ai
+
+We’re always happy to explain how our AI works and how we keep it responsible.

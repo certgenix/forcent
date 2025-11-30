@@ -11,6 +11,7 @@ import TradesHomeServices from "@/pages/industries/TradesHomeServices";
 import RealEstate from "@/pages/industries/RealEstate";
 import HospitalityRetail from "@/pages/industries/HospitalityRetail";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import ResponsibleAI from "@/pages/ResponsibleAI";
 import NotFound from "@/pages/not-found";
 import CookieConsent from "@/components/CookieConsent";
 
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/industries/real-estate" component={RealEstate} />
       <Route path="/industries/hospitality-retail" component={HospitalityRetail} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/responsible-ai" component={ResponsibleAI} />
       <Route component={NotFound} />
     </Switch>
   );

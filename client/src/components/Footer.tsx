@@ -133,6 +133,16 @@ export default function Footer() {
                   </span>
                 </Link>
               </li>
+              <li>
+                <Link href="/responsible-ai">
+                  <span 
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                    data-testid="link-footer-responsible-ai"
+                  >
+                    Responsible AI
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
