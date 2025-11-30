@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Mail, Globe } from 'lucide-react';
-import { Link } from 'wouter';
+import { Mail, Globe } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWidget from '@/components/FloatingWidget';
@@ -23,13 +22,6 @@ export default function PrivacyPolicy() {
       
       <section className="py-20 lg:py-32">
         <div className="max-w-4xl mx-auto px-6 lg:px-20">
-          <Link href="/">
-            <button className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8" data-testid="link-back-home">
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Home</span>
-            </button>
-          </Link>
-
           <h1 className="text-4xl lg:text-[56px] font-bold text-foreground leading-tight mb-4" data-testid="text-privacy-headline">
             Privacy Policy
           </h1>
