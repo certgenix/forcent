@@ -1,10 +1,40 @@
+import { useState, useEffect } from 'react';
+import { useLocation } from 'wouter';
 import logoImage from '@assets/logo3_1763807336531.png';
 
 export default function Footer() {
+  const [location, setLocation] = useLocation();
+  const [pendingScroll, setPendingScroll] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (pendingScroll && location === '/') {
+      const element = document.getElementById(pendingScroll);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+      setPendingScroll(null);
+    }
+  }, [location, pendingScroll]);
+
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location !== '/') {
+      setPendingScroll(sectionId);
+      setLocation('/');
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleLogoClick = () => {
+    if (location !== '/') {
+      setLocation('/');
+    } else {
+      scrollToSection('hero');
     }
   };
 
@@ -16,7 +46,8 @@ export default function Footer() {
             <img 
               src={logoImage} 
               alt="ForceNT Logo" 
-              className="h-6 mb-4"
+              className="h-6 mb-4 cursor-pointer"
+              onClick={handleLogoClick}
               data-testid="img-footer-logo"
             />
             <p className="text-sm text-muted-foreground" data-testid="text-footer-tagline">
