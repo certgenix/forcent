@@ -1,16 +1,46 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
 import GradientButton from './GradientButton';
 import logoImage from '@assets/logo3_1763807336531.png';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [location, setLocation] = useLocation();
+  const [pendingScroll, setPendingScroll] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (pendingScroll && location === '/') {
+      const element = document.getElementById(pendingScroll);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+      setPendingScroll(null);
+    }
+  }, [location, pendingScroll]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
+    setMobileMenuOpen(false);
+    
+    if (location !== '/') {
+      setPendingScroll(sectionId);
+      setLocation('/');
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleLogoClick = () => {
+    setMobileMenuOpen(false);
+    if (location !== '/') {
+      setLocation('/');
+    } else {
+      scrollToSection('hero');
     }
   };
 
@@ -23,7 +53,7 @@ export default function Navbar() {
               src={logoImage} 
               alt="ForceNT Logo" 
               className="h-10 lg:h-12 cursor-pointer"
-              onClick={() => scrollToSection('hero')}
+              onClick={handleLogoClick}
               data-testid="img-logo"
             />
           </div>
@@ -43,6 +73,14 @@ export default function Navbar() {
             >
               Solutions
             </button>
+            <Link href="/industries">
+              <span 
+                className={`text-foreground font-medium hover:text-primary transition-colors cursor-pointer ${location.startsWith('/industries') ? 'text-primary' : ''}`}
+                data-testid="link-industries"
+              >
+                Industries
+              </span>
+            </Link>
             <button
               onClick={() => scrollToSection('investment')}
               className="text-foreground font-medium hover:text-primary transition-colors"
@@ -89,6 +127,14 @@ export default function Navbar() {
             >
               Solutions
             </button>
+            <Link href="/industries" onClick={() => setMobileMenuOpen(false)}>
+              <span 
+                className={`block w-full text-left font-medium py-2 cursor-pointer ${location.startsWith('/industries') ? 'text-primary' : 'text-foreground'}`}
+                data-testid="link-mobile-industries"
+              >
+                Industries
+              </span>
+            </Link>
             <button
               onClick={() => scrollToSection('investment')}
               className="block w-full text-left text-foreground font-medium py-2"

@@ -1,0 +1,215 @@
+🌐 MAIN INDUSTRIES PAGE
+Headline
+Industries We Serve
+Subheadline
+We selectively partner with businesses where AI delivers immediate, measurable impact.
+Our focus is on sectors that rely on time-sensitive coordination, customer communication, and manual workflows—areas where automation creates real transformation.
+________________________________________
+Industry Grid (5 Cards)
+(Matches your “solutions we offer” card layout—clean, concise, outcome-first.)
+________________________________________
+Healthcare & Dental
+Better patient experience. Less admin. More capacity.
+We automate patient intake, reminders, insurance checks, and follow-ups so your clinical team can focus on care—not coordination.
+________________________________________
+Professional Services
+Win more clients without adding workload.
+We streamline lead management, onboarding, renewals, and client communication to eliminate admin friction and accelerate growth.
+________________________________________
+Trades & Home Services
+Never miss another job.
+We automate quotes, scheduling, reminders, and customer updates so your team stays efficient and your calendar stays full.
+________________________________________
+Real Estate
+Every lead followed up. Every viewing booked.
+We automate lead qualification, viewing scheduling, listing information, and cold lead reactivation—so your pipeline moves 24/7.
+________________________________________
+Hospitality & Retail
+Deliver exceptional experiences at scale.
+Reservations, customer engagement, reviews, inventory alerts, and loyalty flows—all automated to keep guests coming back.
+________________________________________
+________________________________________
+⚡ Section CTA
+Same style as your existing CTA blocks.
+Ready to remove the manual work holding your business back?
+[Start Your Diagnosis] | [Talk to Our AI Agent 🎤]
+________________________________________
+------------------------------------------------------------
+------------------------------------------------------------
+🎯 INDIVIDUAL LANDING PAGES
+________________________________________
+1️⃣ Healthcare & Dental — Landing Page
+Hero Headline
+Modernize Your Patient Experience Without Changing How You Work
+Subheadline
+We automate patient communication, reminders, intake, and follow-ups so your clinic runs smoothly and your team stays focused on care—not admin.
+________________________________________
+What We Fix
+•	Constant phone calls and scheduling requests
+•	No-shows and late cancellations
+•	Manual insurance checks
+•	Overloaded front desk
+•	Missed follow-ups and incomplete treatment plans
+________________________________________
+How AI Helps Your Clinic
+•	Patient intake collected automatically
+•	Insurance eligibility checked before visits
+•	Appointment reminders sent at the right time
+•	Post-visit instructions delivered instantly
+•	Treatment plan follow-ups handled automatically
+•	Review requests sent at the perfect moment
+________________________________________
+Outcomes You Can Expect
+•	20–40% fewer no-shows
+•	2–3 hours saved daily for staff
+•	Higher treatment acceptance
+•	More consistent patient flow
+•	Better patient experience
+________________________________________
+Who We Support
+Physio | Chiro | Dental | Optometry | Dermatology | Mental Health | Wellness Clinics
+________________________________________
+CTA
+[Book Free Diagnosis] | [Talk to AI Assistant 🎤]
+________________________________________
+------------------------------------------------------------
+2️⃣ Professional Services — Landing Page
+Hero Headline
+Win More Clients. Reduce Operational Friction. Deliver Faster.
+Subheadline
+We automate repetitive tasks—lead intake, proposals, renewals, and communication—so you can focus on high-value work, not admin.
+________________________________________
+What We Fix
+•	Slow or inconsistent follow-ups
+•	Manual onboarding and document collection
+•	Missed renewals
+•	Client communication delays
+•	Time-consuming admin work
+________________________________________
+How AI Helps Your Practice
+•	Leads screened automatically
+•	Calendar booked without back-and-forth
+•	Proposals drafted instantly
+•	Clients onboarded faster
+•	Documents requested automatically
+•	Weekly progress summaries generated
+________________________________________
+Outcomes You Can Expect
+•	More signed clients
+•	Faster turnaround
+•	Fewer admin tasks
+•	Smoother client experience
+•	Higher retention
+________________________________________
+Who We Support
+Law | Accounting | Consulting | HR | Recruiting | Financial Services | Agencies
+________________________________________
+CTA
+[Start Your Diagnosis] | [Talk to AI Now 🎤]
+________________________________________
+------------------------------------------------------------
+3️⃣ Trades & Home Services — Landing Page
+Hero Headline
+Automate Jobs, Quotes, Scheduling, and Customer Communication
+Subheadline
+We help service businesses win more jobs by automating follow-ups, reminders, and real-time updates.
+________________________________________
+What We Fix
+•	Missed calls = missed jobs
+•	Manual quote creation
+•	No follow-up on open estimates
+•	Scheduling conflicts
+•	Unreliable customer communication
+________________________________________
+How AI Helps Your Business
+•	Quotes sent instantly
+•	Follow-ups handled automatically
+•	Jobs scheduled without friction
+•	Technician reminders sent on time
+•	Customer updates delivered as work progresses
+•	Reviews requested automatically
+________________________________________
+Outcomes You Can Expect
+•	25–50% more booked jobs
+•	Faster response time
+•	Better communication
+•	Happier customers
+•	Fewer scheduling issues
+________________________________________
+Who We Support
+HVAC | Plumbing | Electrical | Landscaping | Cleaning | Contracting & Renovations
+________________________________________
+CTA
+[Get Your Diagnosis] | [Ask Our AI Agent 🎤]
+________________________________________
+------------------------------------------------------------
+4️⃣ Real Estate — Landing Page
+Hero Headline
+Automate Lead Follow-Up and Booking—24/7
+Subheadline
+We help real estate professionals convert more leads by automating qualification, viewing scheduling, and communication.
+________________________________________
+What We Fix
+•	Slow follow-ups
+•	Missed opportunities
+•	Manual viewing coordination
+•	Cold leads that never reactivate
+•	Time-consuming administrative tasks
+________________________________________
+How AI Helps Your Team
+•	Every lead contacted instantly
+•	Qualification handled automatically
+•	Viewings booked seamlessly
+•	Listing info delivered on demand
+•	Mortgage or neighborhood questions answered
+•	Weekly pipeline summaries sent to your inbox
+________________________________________
+Outcomes You Can Expect
+•	3× more qualified conversations
+•	Higher conversion rates
+•	Smoother client experience
+•	Faster deal cycles
+•	No pipeline leakage
+________________________________________
+Who We Support
+Agents | Teams | Brokers | Property Managers | STR Operators
+________________________________________
+CTA
+[Book Your Diagnosis] | [Talk to AI 🎤]
+________________________________________
+------------------------------------------------------------
+5️⃣ Hospitality & Retail — Landing Page
+Hero Headline
+Deliver a Better Guest Experience—Without Adding Staff
+Subheadline
+We automate reservations, loyalty, reviews, and customer engagement so your business runs smoothly and stays top-of-mind.
+________________________________________
+What We Fix
+•	Missed calls & booking requests
+•	Inconsistent customer communication
+•	Manual loyalty programs
+•	Review gaps
+•	Inventory surprises
+•	Re-engagement challenges
+________________________________________
+How AI Helps Your Business
+•	Reservations and confirmations automated
+•	Personalized promotions sent to customers
+•	Inventory alerts generated automatically
+•	Loyalty reminders triggered at the right time
+•	Review requests sent after each visit
+•	Customer re-engagement handled for you
+________________________________________
+Outcomes You Can Expect
+•	Increased repeat customers
+•	More bookings
+•	Better customer satisfaction
+•	Less admin work
+•	Higher revenue per visit
+________________________________________
+Who We Support
+Restaurants | Cafés | Boutiques | Spas | Salons | Small Hotels
+________________________________________
+CTA
+[Start Your Diagnosis] | [Talk to AI Agent 🎤]
+
