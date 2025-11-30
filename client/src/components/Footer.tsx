@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import logoImage from '@assets/logo3_1763807336531.png';
 
 export default function Footer() {
@@ -124,13 +124,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <button 
-                  onClick={() => console.log('Privacy clicked')}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-footer-privacy"
-                >
-                  Privacy Policy
-                </button>
+                <Link href="/privacy-policy">
+                  <span 
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                    data-testid="link-footer-privacy"
+                  >
+                    Privacy Policy
+                  </span>
+                </Link>
               </li>
               <li>
                 <button 

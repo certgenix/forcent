@@ -10,6 +10,7 @@ import ProfessionalServices from "@/pages/industries/ProfessionalServices";
 import TradesHomeServices from "@/pages/industries/TradesHomeServices";
 import RealEstate from "@/pages/industries/RealEstate";
 import HospitalityRetail from "@/pages/industries/HospitalityRetail";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/industries/trades-home-services" component={TradesHomeServices} />
       <Route path="/industries/real-estate" component={RealEstate} />
       <Route path="/industries/hospitality-retail" component={HospitalityRetail} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );
