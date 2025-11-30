@@ -133,15 +133,6 @@ export default function Footer() {
                   </span>
                 </Link>
               </li>
-              <li>
-                <button 
-                  onClick={() => console.log('Terms clicked')}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="link-footer-terms"
-                >
-                  Terms of Service
-                </button>
-              </li>
             </ul>
           </div>
         </div>
