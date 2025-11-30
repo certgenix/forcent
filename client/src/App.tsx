@@ -12,6 +12,7 @@ import RealEstate from "@/pages/industries/RealEstate";
 import HospitalityRetail from "@/pages/industries/HospitalityRetail";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import NotFound from "@/pages/not-found";
+import CookieConsent from "@/components/CookieConsent";
 
 function Router() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <CookieConsent />
       </TooltipProvider>
     </QueryClientProvider>
   );
