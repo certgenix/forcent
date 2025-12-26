@@ -82,7 +82,7 @@ export default function Hero() {
           </div>
 
           <motion.div 
-            className="flex justify-center items-center order-first lg:order-last"
+            className="hidden lg:flex justify-center items-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -90,7 +90,7 @@ export default function Hero() {
             <img 
               src={hero3dImage} 
               alt="AI-powered business growth visualization" 
-              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl object-contain lg:scale-110"
+              className="w-full max-w-2xl object-contain scale-110"
               data-testid="img-hero-3d"
             />
           </motion.div>
