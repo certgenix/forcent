@@ -1,4 +1,5 @@
 import { AlertCircle, Users, TrendingDown, Zap } from 'lucide-react';
+import { AnimatedSection, StaggeredList } from './AnimatedSection';
 
 export default function Problem() {
   const problems = [
@@ -27,11 +28,13 @@ export default function Problem() {
   return (
     <section id="problem" className="bg-muted py-20 lg:py-32 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-20">
-        <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-16" data-testid="text-problem-headline">
-          You've Outgrown Your Systems. They Haven't Grown With You.
-        </h2>
+        <AnimatedSection>
+          <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-16" data-testid="text-problem-headline">
+            You've Outgrown Your Systems. They Haven't Grown With You.
+          </h2>
+        </AnimatedSection>
         
-        <div className="space-y-8">
+        <StaggeredList className="space-y-8" staggerDelay={0.15}>
           {problems.map((problem, index) => (
             <div 
               key={index}
@@ -55,15 +58,17 @@ export default function Problem() {
               </div>
             </div>
           ))}
-        </div>
+        </StaggeredList>
         
-        <div className="mt-12 text-center">
-          <p className="text-xl text-foreground font-semibold" data-testid="text-problem-conclusion">
-            The real problem: You're still running your business like it's 2010.
-            <br />
-            <span className="text-muted-foreground font-normal">Your competitors automated. You're still grinding.</span>
-          </p>
-        </div>
+        <AnimatedSection delay={0.4}>
+          <div className="mt-12 text-center">
+            <p className="text-xl text-foreground font-semibold" data-testid="text-problem-conclusion">
+              The real problem: You're still running your business like it's 2010.
+              <br />
+              <span className="text-muted-foreground font-normal">Your competitors automated. You're still grinding.</span>
+            </p>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );

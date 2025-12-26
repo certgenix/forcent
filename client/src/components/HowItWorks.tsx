@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { AnimatedSection, StaggeredList } from './AnimatedSection';
 
 export default function HowItWorks() {
   const steps = [
@@ -36,14 +37,16 @@ export default function HowItWorks() {
   return (
     <section id="how-it-works" className="bg-muted py-20 lg:py-32 border-t border-border">
       <div className="max-w-5xl mx-auto px-6 lg:px-20">
-        <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-4" data-testid="text-how-it-works-headline">
-          How It Works
-        </h2>
-        <p className="text-xl text-foreground text-center font-semibold mb-20" data-testid="text-how-it-works-subheadline">
-          90-Day Transformation
-        </p>
+        <AnimatedSection>
+          <h2 className="text-3xl lg:text-[36px] font-bold text-foreground text-center mb-4" data-testid="text-how-it-works-headline">
+            How It Works
+          </h2>
+          <p className="text-xl text-foreground text-center font-semibold mb-20" data-testid="text-how-it-works-subheadline">
+            90-Day Transformation
+          </p>
+        </AnimatedSection>
 
-        <div className="relative space-y-8">
+        <StaggeredList className="relative space-y-8" staggerDelay={0.2}>
           {steps.map((step, index) => (
             <div 
               key={index}
@@ -84,7 +87,7 @@ export default function HowItWorks() {
               </div>
             </div>
           ))}
-        </div>
+        </StaggeredList>
       </div>
     </section>
   );
