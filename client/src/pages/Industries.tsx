@@ -8,6 +8,7 @@ import FloatingWidget from '@/components/FloatingWidget';
 import AIChatModal from '@/components/AIChatModal';
 import GradientButton from '@/components/GradientButton';
 import OutlineButton from '@/components/OutlineButton';
+import { AnimatedSection, ScaleIn } from '@/components/AnimatedSection';
 
 const industries = [
   {
@@ -71,7 +72,7 @@ export default function Industries() {
       
       <section className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="text-center mb-16">
+          <AnimatedSection className="text-center mb-16">
             <h1 className="text-4xl lg:text-[56px] font-bold text-foreground leading-tight mb-6" data-testid="text-industries-headline">
               Industries We Serve
             </h1>
@@ -80,68 +81,72 @@ export default function Industries() {
               Our focus is on sectors that rely on time-sensitive coordination, customer communication, 
               and manual workflows—areas where automation creates real transformation.
             </p>
-          </div>
+          </AnimatedSection>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {industries.map((industry, index) => (
-              <Link key={index} href={industry.href}>
-                <Card 
-                  className="p-8 h-full group cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-                  data-testid={`card-industry-${index}`}
-                >
-                  <div className="flex justify-center mb-6">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <industry.icon 
-                        className="w-8 h-8 text-primary" 
-                        strokeWidth={2}
-                        data-testid={`icon-industry-${index}`}
-                      />
+              <ScaleIn key={index} delay={index * 0.1}>
+                <Link href={industry.href}>
+                  <Card 
+                    className="p-8 h-full group cursor-pointer transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                    data-testid={`card-industry-${index}`}
+                  >
+                    <div className="flex justify-center mb-6">
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                        <industry.icon 
+                          className="w-8 h-8 text-primary" 
+                          strokeWidth={2}
+                          data-testid={`icon-industry-${index}`}
+                        />
+                      </div>
                     </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold text-foreground text-center mb-3" data-testid={`text-industry-title-${index}`}>
-                    {industry.title}
-                  </h3>
-                  
-                  <p className="text-primary font-medium text-center mb-4" data-testid={`text-industry-tagline-${index}`}>
-                    {industry.description}
-                  </p>
-                  
-                  <p className="text-muted-foreground text-center leading-relaxed mb-6" data-testid={`text-industry-details-${index}`}>
-                    {industry.details}
-                  </p>
-                  
-                  <div className="flex items-center justify-center text-primary font-medium group-hover:gap-3 gap-2 transition-all">
-                    <span>Learn More</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Card>
-              </Link>
+                    
+                    <h3 className="text-xl font-semibold text-foreground text-center mb-3" data-testid={`text-industry-title-${index}`}>
+                      {industry.title}
+                    </h3>
+                    
+                    <p className="text-primary font-medium text-center mb-4" data-testid={`text-industry-tagline-${index}`}>
+                      {industry.description}
+                    </p>
+                    
+                    <p className="text-muted-foreground text-center leading-relaxed mb-6" data-testid={`text-industry-details-${index}`}>
+                      {industry.details}
+                    </p>
+                    
+                    <div className="flex items-center justify-center text-primary font-medium group-hover:gap-3 gap-2 transition-all">
+                      <span>Learn More</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Card>
+                </Link>
+              </ScaleIn>
             ))}
           </div>
 
-          <div className="bg-muted border border-card-border rounded-xl p-12 text-center">
-            <h2 className="text-3xl lg:text-[36px] font-bold text-foreground mb-4" data-testid="text-industries-cta-headline">
-              Ready to remove the manual work holding your business back?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto" data-testid="text-industries-cta-subheadline">
-              Get a free diagnosis of your bottlenecks and see how AI can transform your operations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <GradientButton 
-                onClick={handleOpenChat}
-                data-testid="button-industries-diagnosis"
-              >
-                Start Your Diagnosis
-              </GradientButton>
-              <OutlineButton 
-                onClick={handleOpenChat}
-                data-testid="button-industries-talk-ai"
-              >
-                Talk to Our AI Agent
-              </OutlineButton>
+          <ScaleIn delay={0.5}>
+            <div className="bg-muted border border-card-border rounded-xl p-12 text-center">
+              <h2 className="text-3xl lg:text-[36px] font-bold text-foreground mb-4" data-testid="text-industries-cta-headline">
+                Ready to remove the manual work holding your business back?
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto" data-testid="text-industries-cta-subheadline">
+                Get a free diagnosis of your bottlenecks and see how AI can transform your operations.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <GradientButton 
+                  onClick={handleOpenChat}
+                  data-testid="button-industries-diagnosis"
+                >
+                  Start Your Diagnosis
+                </GradientButton>
+                <OutlineButton 
+                  onClick={handleOpenChat}
+                  data-testid="button-industries-talk-ai"
+                >
+                  Talk to Our AI Agent
+                </OutlineButton>
+              </div>
             </div>
-          </div>
+          </ScaleIn>
         </div>
       </section>
 
