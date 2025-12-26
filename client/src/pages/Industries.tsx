@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'wouter';
-import { Stethoscope, Briefcase, Wrench, Home, Utensils, ArrowRight } from 'lucide-react';
+import { Stethoscope, Briefcase, Wrench, Home, Utensils, HardHat, ArrowRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -44,6 +44,13 @@ const industries = [
     description: 'Deliver exceptional experiences at scale.',
     details: 'Reservations, customer engagement, reviews, inventory alerts, and loyalty flows—all automated to keep guests coming back.',
     href: '/industries/hospitality-retail'
+  },
+  {
+    icon: HardHat,
+    title: 'Construction & Development',
+    description: 'Bid faster. Secure your margins. Zero compliance gaps.',
+    details: 'We automate the bidding process, subcontractor scheduling, and insurance tracking (COIs). Streamline your project admin while locking down payment security to prevent fraud.',
+    href: '/industries/construction'
   }
 ];
 
