@@ -14,48 +14,38 @@ export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="relative py-20 lg:py-32 overflow-hidden bg-background"
+      className="relative py-16 lg:py-24 overflow-hidden bg-background"
     >
       <div className="relative max-w-7xl mx-auto px-6 lg:px-20 z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <motion.p 
-              className="text-sm text-foreground font-medium mb-6" 
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-4">
+          <motion.div 
+            className="flex-1 text-center lg:text-left order-2 lg:order-1"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <p 
+              className="text-sm text-primary font-semibold uppercase tracking-wide mb-4" 
               data-testid="text-pre-headline"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
             >
-              For Growing Businesses Ready to Scale Smarter
-            </motion.p>
+              For Growing Businesses
+            </p>
             
-            <motion.h1 
-              className="text-4xl lg:text-[56px] font-bold text-foreground leading-tight mb-6" 
+            <h1 
+              className="text-3xl lg:text-5xl font-bold text-foreground leading-tight mb-6" 
               data-testid="text-headline"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
             >
               The Business Growth Engine That Combines People + AI.
-            </motion.h1>
+            </h1>
             
-            <motion.p 
-              className="text-lg text-muted-foreground leading-relaxed mb-10" 
+            <p 
+              className="text-base lg:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl" 
               data-testid="text-subheadline"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
             >
               We build intelligent systems that combine your team with AI-powered virtual employees and autonomous workflows.
-              The result: predictable growth, lower costs, and a business that runs without you being the bottleneck.
-            </motion.p>
+            </p>
             
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 mb-10"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <GradientButton 
                 onClick={() => scrollToSection('experience')}
                 data-testid="button-hero-primary"
@@ -68,33 +58,64 @@ export default function Hero() {
               >
                 See How It Works
               </OutlineButton>
-            </motion.div>
-            
-            <motion.p 
-              className="text-sm text-muted-foreground" 
-              data-testid="text-trust-line"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.7 }}
-            >
-              Built for professional services, e-commerce, SaaS, and agencies with $500K–$20M in revenue.
-            </motion.p>
-          </div>
+            </div>
+          </motion.div>
 
           <motion.div 
-            className="hidden lg:flex justify-center items-center"
+            className="flex-shrink-0 order-1 lg:order-2"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <img 
-              src={hero3dImage} 
-              alt="AI-powered business growth visualization" 
-              className="w-full max-w-lg object-contain"
-              data-testid="img-hero-3d"
-            />
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-purple-500/20 rounded-full blur-3xl scale-110" />
+              <img 
+                src={hero3dImage} 
+                alt="AI-powered business growth visualization" 
+                className="relative w-64 h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-contain"
+                data-testid="img-hero-3d"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div 
+            className="flex-1 text-center lg:text-right order-3 hidden lg:block"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="space-y-6">
+              <div className="inline-block text-right">
+                <p className="text-4xl font-bold text-primary mb-1">24/7</p>
+                <p className="text-sm text-muted-foreground">Always Available</p>
+              </div>
+              
+              <div className="inline-block text-right">
+                <p className="text-4xl font-bold text-primary mb-1">50%</p>
+                <p className="text-sm text-muted-foreground">Cost Reduction</p>
+              </div>
+              
+              <div className="inline-block text-right">
+                <p className="text-4xl font-bold text-primary mb-1">3x</p>
+                <p className="text-sm text-muted-foreground">Faster Response</p>
+              </div>
+            </div>
           </motion.div>
         </div>
+
+        <motion.div 
+          className="mt-12 pt-8 border-t border-border"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <p 
+            className="text-sm text-muted-foreground text-center" 
+            data-testid="text-trust-line"
+          >
+            Built for professional services, e-commerce, SaaS, and agencies with $500K–$20M in revenue.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
