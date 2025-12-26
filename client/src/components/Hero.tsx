@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import GradientButton from './GradientButton';
 import OutlineButton from './OutlineButton';
-import heroImage from '@assets/hero2_1763805422398.png';
+import hero3dImage from '@assets/hero-image-3d-BQ1hkZUZ_1766732551656.png';
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -14,17 +14,10 @@ export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="relative py-20 lg:py-32 overflow-hidden"
-      style={{
-        backgroundImage: `url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="relative py-20 lg:py-32 overflow-hidden bg-background"
     >
-      <div className="absolute inset-0 bg-white/90" />
       <div className="relative max-w-7xl mx-auto px-6 lg:px-20 z-10">
-        <div className="max-w-3xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <motion.p 
               className="text-sm text-foreground font-medium mb-6" 
@@ -87,6 +80,20 @@ export default function Hero() {
               Built for professional services, e-commerce, SaaS, and agencies with $500K–$20M in revenue.
             </motion.p>
           </div>
+
+          <motion.div 
+            className="hidden lg:flex justify-center items-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+          >
+            <img 
+              src={hero3dImage} 
+              alt="AI-powered business growth visualization" 
+              className="w-full max-w-lg object-contain"
+              data-testid="img-hero-3d"
+            />
+          </motion.div>
         </div>
       </div>
     </section>
