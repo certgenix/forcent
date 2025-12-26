@@ -90,7 +90,7 @@ export default function Hero() {
             <img 
               src={hero3dImage} 
               alt="AI-powered business growth visualization" 
-              className="w-full max-w-lg object-contain"
+              className="w-full max-w-2xl object-contain scale-110"
               data-testid="img-hero-3d"
             />
           </motion.div>
