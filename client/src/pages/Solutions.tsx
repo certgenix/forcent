@@ -1,11 +1,65 @@
 import { useState } from 'react';
-import { Check, Shield, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Link } from 'wouter';
+import { ArrowLeft, Clock, TrendingUp, Target, Zap, MessageCircle, CheckCircle, Lock } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingWidget from '@/components/FloatingWidget';
 import AIChatModal from '@/components/AIChatModal';
+import { SiOpenai } from 'react-icons/si';
+
+const painPoints = [
+  { text: 'Missed leads and slow response times' },
+  { text: '"Copy-pasting" data between apps' },
+  { text: 'Customer support backlog' },
+  { text: 'Human error in data entry' },
+  { text: 'Privacy concerns with public AI' },
+];
+
+const solutions = [
+  { 
+    icon: Target, 
+    title: '24/7 Sales Agents',
+    text: 'Our AI instantly engages leads, qualifies them, and books meetings on your calendar. You never miss an opportunity because you were sleeping.'
+  },
+  { 
+    icon: Zap, 
+    title: 'Workflow Automation',
+    text: 'We connect your systems (CRM, Email, Finance) so data moves automatically. Quotes turn into invoices and projects instantly.'
+  },
+  { 
+    icon: MessageCircle, 
+    title: 'AI Customer Success',
+    text: 'Intelligent agents resolve 80% of common support tickets instantly, escalating only the complex issues to your human team.'
+  },
+  { 
+    icon: CheckCircle, 
+    title: 'Precision Processing',
+    text: "Bots don't make typos. We automate complex forms, document reading (OCR), and data validation with 100% accuracy."
+  },
+  { 
+    icon: Lock, 
+    title: 'Private AI Environments',
+    text: 'Your "Virtual Employees" work inside a secure, private perimeter. Your proprietary data is never trained on public models.'
+  },
+];
+
+const outcomes = [
+  { metric: 'Instant', label: 'Response Time', subtext: 'Leads replied to in seconds' },
+  { metric: 'Zero', label: 'Data Entry', subtext: 'Staff freed for real work' },
+  { metric: '24/7', label: 'Availability', subtext: 'Systems never sleep' },
+  { metric: 'Lower', label: 'Overhead', subtext: 'Scale without hiring' },
+];
+
+const technologies = [
+  'OpenAI (GPT-4)',
+  'Make.com',
+  'Zapier',
+  'Microsoft Power Automate',
+  'Anthropic Claude',
+  'Custom Agents',
+];
 
 export default function Solutions() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -24,137 +78,126 @@ export default function Solutions() {
       
       <section className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-20">
-          <div className="text-center mb-16">
+          <Link href="/">
+            <button className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8" data-testid="link-back-home">
+              <ArrowLeft className="w-4 h-4" />
+              <span>Back to Home</span>
+            </button>
+          </Link>
+
+          <div className="max-w-4xl mb-16">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <Badge variant="secondary" className="text-sm">AI & Process Automation</Badge>
+            </div>
+            
             <h1 className="text-4xl lg:text-[56px] font-bold text-foreground leading-tight mb-6" data-testid="text-solutions-headline">
-              Our Solutions
+              Hire Your Digital Workforce.
             </h1>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Two powerful pillars working together to grow and protect your business.
+            <p className="text-lg lg:text-xl text-muted-foreground" data-testid="text-solutions-subheadline">
+              Scale your operations without increasing headcount. We deploy intelligent AI agents and automated workflows that handle your repetitive sales, support, and admin tasks 24/7—faster and cheaper than humanly possible.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            <Card className="p-8 lg:p-10 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
-              <div className="mb-6">
-                <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">
-                  THE OFFENSE
-                </span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2" data-testid="text-solutions-growth-headline">
-                  Virtual Employees & Automation
-                </h2>
-                <p className="text-xl text-primary font-medium">
-                  "Make more profit with less work."
-                </p>
-              </div>
-
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-4">What We Build:</h3>
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">1. AI Virtual Employees</h4>
-                    <p className="text-muted-foreground">
-                      Intelligent agents that handle sales qualification, customer support, and scheduling 24/7. They don't sleep, and they cost 90% less than hiring.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">2. Connected Workflows</h4>
-                    <p className="text-muted-foreground">
-                      We connect your apps so data moves instantly. No more copy-pasting between spreadsheets. Quotes, invoices, and updates happen automatically.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">3. Revenue Acceleration</h4>
-                    <p className="text-muted-foreground">
-                      Systems that automatically follow up on leads and chase unpaid invoices. We fix the "leaky bucket" in your sales process.
-                    </p>
-                  </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+            <Card className="p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3" data-testid="text-painpoints-title">
+                <div className="w-10 h-10 rounded-full bg-destructive/10 flex items-center justify-center">
+                  <Clock className="w-5 h-5 text-destructive" />
                 </div>
-              </div>
-
-              <div className="mb-8 p-4 bg-muted rounded-lg">
-                <h4 className="font-semibold text-foreground mb-3">Outcome:</h4>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-primary" />
-                    <span className="text-foreground font-medium">20+ Hours Saved Per Week</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Check className="w-5 h-5 text-primary" />
-                    <span className="text-foreground font-medium">Lower Payroll Costs</span>
-                  </div>
-                </div>
-              </div>
-
-              <Button 
-                className="w-full bg-gradient-to-r from-[#00BFFF] via-[#2563EB] to-[#7A5BFF] hover:opacity-90 text-white"
-                data-testid="button-see-growth-solutions"
-                onClick={handleOpenChat}
-              >
-                See Growth Solutions
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+                What We Fix
+              </h2>
+              <ul className="space-y-4">
+                {painPoints.map((point, index) => (
+                  <li key={index} className="flex items-start gap-3" data-testid={`text-painpoint-${index}`}>
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span className="text-muted-foreground">{point.text}</span>
+                  </li>
+                ))}
+              </ul>
             </Card>
 
-            <Card className="p-8 lg:p-10 border-2 border-emerald-500/20 bg-gradient-to-br from-emerald-500/5 to-transparent">
-              <div className="mb-6">
-                <span className="inline-block px-4 py-2 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold rounded-full text-sm mb-4">
-                  THE DEFENSE
-                </span>
-                <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-2" data-testid="text-solutions-security-headline">
-                  Cybersecurity & Compliance
-                </h2>
-                <p className="text-xl text-emerald-600 dark:text-emerald-400 font-medium">
-                  "Protect your reputation and cash."
-                </p>
-              </div>
-
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-4">What We Build:</h3>
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">1. Compliance Readiness</h4>
-                    <p className="text-muted-foreground">
-                      We prepare your business for SOC 2, HIPAA, or ISO standards. This isn't just paperwork—it helps you win bigger clients who demand security.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">2. Threat Protection</h4>
-                    <p className="text-muted-foreground">
-                      We lock down your email, cloud storage, and devices. We stop ransomware and phishing attacks before they stop your business.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">3. Private AI Environments</h4>
-                    <p className="text-muted-foreground">
-                      Your Virtual Employees run in a secure, private "box." Your trade secrets and client data are never shared with public AI models.
-                    </p>
-                  </div>
+            <Card className="p-8">
+              <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3" data-testid="text-solutions-title">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <TrendingUp className="w-5 h-5 text-primary" />
                 </div>
-              </div>
-
-              <div className="mb-8 p-4 bg-muted rounded-lg">
-                <h4 className="font-semibold text-foreground mb-3">Outcome:</h4>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Shield className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-                    <span className="text-foreground font-medium">Zero Data Leaks</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Shield className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
-                    <span className="text-foreground font-medium">Trust from Enterprise Clients</span>
-                  </div>
-                </div>
-              </div>
-
-              <Button 
-                className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
-                data-testid="button-see-security-solutions"
-                onClick={handleOpenChat}
-              >
-                See Security Solutions
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+                How We Solve It
+              </h2>
+              <ul className="space-y-4">
+                {solutions.map((solution, index) => (
+                  <li key={index} className="flex items-start gap-3" data-testid={`text-solution-${index}`}>
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <solution.icon className="w-4 h-4 text-primary" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-foreground">{solution.title}</div>
+                      <span className="text-muted-foreground text-sm">{solution.text}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </Card>
+          </div>
+
+          <div className="bg-muted border border-card-border rounded-xl p-8 lg:p-12 mb-20">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground text-center mb-10" data-testid="text-outcomes-title">
+              Outcomes You Can Expect
+            </h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+              {outcomes.map((outcome, index) => (
+                <div key={index} className="text-center" data-testid={`card-outcome-${index}`}>
+                  <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">{outcome.metric}</div>
+                  <div className="text-foreground font-medium">{outcome.label}</div>
+                  <div className="text-sm text-muted-foreground">{outcome.subtext}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-20">
+            <h2 className="text-2xl font-bold text-foreground text-center mb-8" data-testid="text-tech-title">
+              Technologies We Deploy
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {technologies.map((tech, index) => (
+                <Badge 
+                  key={index} 
+                  variant="outline" 
+                  className="text-sm px-4 py-2"
+                  data-testid={`badge-tech-${index}`}
+                >
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-gradient-brand rounded-xl p-8 lg:p-12 text-center text-white">
+            <h2 className="text-3xl lg:text-[36px] font-bold mb-4" data-testid="text-cta-headline">
+              Ready to Automate the Busywork?
+            </h2>
+            <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto" data-testid="text-cta-subheadline">
+              See a live demo of a Virtual Employee handling your workflow.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button 
+                onClick={handleOpenChat}
+                className="bg-white text-primary font-semibold px-8 py-4 rounded-lg hover:bg-white/90 transition-colors"
+                data-testid="button-watch-demo"
+              >
+                Watch the Demo
+              </button>
+              <button 
+                onClick={handleOpenChat}
+                className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors"
+                data-testid="button-talk-expert"
+              >
+                Talk to an Expert
+              </button>
+            </div>
           </div>
         </div>
       </section>
