@@ -10,6 +10,7 @@ import ProfessionalServices from "@/pages/industries/ProfessionalServices";
 import TradesHomeServices from "@/pages/industries/TradesHomeServices";
 import RealEstate from "@/pages/industries/RealEstate";
 import HospitalityRetail from "@/pages/industries/HospitalityRetail";
+import Construction from "@/pages/industries/Construction";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import ResponsibleAI from "@/pages/ResponsibleAI";
 import Solutions from "@/pages/Solutions";
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/industries/trades-home-services" component={TradesHomeServices} />
       <Route path="/industries/real-estate" component={RealEstate} />
       <Route path="/industries/hospitality-retail" component={HospitalityRetail} />
+      <Route path="/industries/construction" component={Construction} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/responsible-ai" component={ResponsibleAI} />
       <Route path="/solutions" component={Solutions} />
