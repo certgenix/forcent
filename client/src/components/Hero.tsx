@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section 
       id="hero" 
-      className="relative py-20 lg:py-32 overflow-hidden bg-background"
+      className="relative py-12 lg:py-20 overflow-hidden bg-background"
     >
       <div className="relative max-w-7xl mx-auto px-6 lg:px-20 z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
