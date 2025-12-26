@@ -1,0 +1,9 @@
+Column 1: THE OFFENSE (Growth),Column 2: THE DEFENSE (Security)
+Headline: Virtual Employees & Automation,Headline: Cybersecurity & Compliance
+"The Promise: ""Make more profit with less work.""","The Promise: ""Protect your reputation and cash."""
+What We Build:,What We Build:
+"1. AI Virtual EmployeesIntelligent agents that handle sales qualification, customer support, and scheduling 24/7. They don't sleep, and they cost 90% less than hiring.","1. Compliance ReadinessWe prepare your business for SOC 2, HIPAA, or ISO standards. This isn't just paperwork—it helps you win bigger clients who demand security."
+"2. Connected WorkflowsWe connect your apps so data moves instantly. No more copy-pasting between spreadsheets. Quotes, invoices, and updates happen automatically.","2. Threat ProtectionWe lock down your email, cloud storage, and devices. We stop ransomware and phishing attacks before they stop your business."
+"3. Revenue AccelerationSystems that automatically follow up on leads and chase unpaid invoices. We fix the ""leaky bucket"" in your sales process.","3. Private AI EnvironmentsYour Virtual Employees run in a secure, private ""box."" Your trade secrets and client data are never shared with public AI models."
+Outcome:✅ 20+ Hours Saved Per Week✅ Lower Payroll Costs,Outcome:🔒 Zero Data Leaks🔒 Trust from Enterprise Clients
+[ Button: See Growth Solutions ],[ Button: See Security Solutions ]

@@ -66,13 +66,14 @@ export default function Navbar() {
             >
               How It Works
             </button>
-            <button
-              onClick={() => scrollToSection('solution')}
-              className="text-foreground font-medium hover:text-primary transition-colors"
-              data-testid="link-solutions"
-            >
-              Solutions
-            </button>
+            <Link href="/solutions">
+              <span 
+                className={`text-foreground font-medium hover:text-primary transition-colors cursor-pointer ${location === '/solutions' ? 'text-primary' : ''}`}
+                data-testid="link-solutions"
+              >
+                Solutions
+              </span>
+            </Link>
             <Link href="/industries">
               <span 
                 className={`text-foreground font-medium hover:text-primary transition-colors cursor-pointer ${location.startsWith('/industries') ? 'text-primary' : ''}`}
@@ -120,13 +121,14 @@ export default function Navbar() {
             >
               How It Works
             </button>
-            <button
-              onClick={() => scrollToSection('solution')}
-              className="block w-full text-left text-foreground font-medium py-2"
-              data-testid="link-mobile-solutions"
-            >
-              Solutions
-            </button>
+            <Link href="/solutions" onClick={() => setMobileMenuOpen(false)}>
+              <span 
+                className={`block w-full text-left font-medium py-2 cursor-pointer ${location === '/solutions' ? 'text-primary' : 'text-foreground'}`}
+                data-testid="link-mobile-solutions"
+              >
+                Solutions
+              </span>
+            </Link>
             <Link href="/industries" onClick={() => setMobileMenuOpen(false)}>
               <span 
                 className={`block w-full text-left font-medium py-2 cursor-pointer ${location.startsWith('/industries') ? 'text-primary' : 'text-foreground'}`}
