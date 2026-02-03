@@ -1,0 +1,141 @@
+TASK:
+Add a new marketing page to the existing web app using the SAME design system, colors, typography, spacing, and components already used in the project.
+
+CRITICAL RULES:
+- Do NOT refactor existing code
+- Do NOT break Firebase, auth, routing, or existing pages
+- Reuse existing layout components, navbar, buttons, and CSS/Tailwind styles
+- Follow current routing pattern (React / Next / plain HTML — detect automatically)
+- Mobile-first and fully responsive
+- Clean, semantic HTML/JSX
+- SEO-friendly headings (H1–H3)
+
+--------------------------------------------------
+1) NAVIGATION BAR UPDATE
+--------------------------------------------------
+- Add a new button/link in the existing Navbar
+- Label: "Marketing"
+- Route: /marketing (or equivalent route style already used)
+- Match existing navbar button style and hover behavior
+
+--------------------------------------------------
+2) PAGE STRUCTURE (Marketing Page)
+--------------------------------------------------
+
+PAGE TITLE (H1 – Hero Section):
+"We Architect Brands That AI Loves and Humans Trust."
+
+SUB-HEADLINE:
+"Stop shouting into the void. We apply Enterprise-grade strategy and human psychology to turn your digital presence into a high-performance growth engine."
+
+PRIMARY CTA BUTTON:
+"Claim Your Growth Blueprint"
+- Use existing primary button style
+- Scrolls to Final CTA section or opens booking modal (if exists)
+
+SECONDARY CTA:
+"See Our Framework"
+- Scrolls to RACE Framework section
+
+--------------------------------------------------
+3) PAIN POINT SECTION
+--------------------------------------------------
+SECTION TITLE (H2):
+"Is Your Digital Presence 'Glitching'?"
+
+BODY COPY:
+"In 2026, 'just posting' is a waste of time. Algorithms are saturated, and AI is the new gatekeeper of information. If your brand feels invisible, you don’t need more content—you need a better architecture."
+
+DISPLAY 3 PAIN CARDS (reuse card component if available):
+1. The Ghost Town  
+   High effort, low engagement.
+
+2. The AI Blindspot  
+   Not being cited by ChatGPT, Gemini, or Perplexity.
+
+3. The Trust Gap  
+   Content that feels robotic and fails to convert.
+
+--------------------------------------------------
+4) FRAMEWORK SECTION – RACE SYSTEM
+--------------------------------------------------
+SECTION TITLE:
+"Our Winning Framework: The RACE System"
+
+SUBTEXT:
+"Marketing is a System, Not a Guessing Game."
+
+DISPLAY AS:
+- Responsive table on desktop
+- Stacked cards on mobile
+
+CONTENT:
+REACH – AI-Search Optimization (GEO) & Discovery  
+Result: You become the "Top Answer" everywhere.
+
+ACT – Psychology-Led Micro-Moments  
+Result: Passive viewers become active participants.
+
+CONVERT – Frictionless Lead Generation  
+Result: Interest turns into measurable revenue.
+
+ENGAGE – Owned Community & Authority  
+Result: Customers turn into a lifelong "Tribe."
+
+--------------------------------------------------
+5) MODERN MEDIA SERVICES
+--------------------------------------------------
+GRID OR ICON LIST (reuse existing components):
+
+- Authority Positioning (LinkedIn & X)
+- Short-Form Video (Instagram & FB)
+- Generative Engine Optimization (GEO)
+- Behavioral Copywriting
+
+Each item:
+- Short bold title
+- One-line description
+- Consistent spacing & alignment
+
+--------------------------------------------------
+6) WHY THE ARCHITECTURE METHOD
+--------------------------------------------------
+SECTION TITLE:
+"Why The Architecture Method?"
+
+TAGLINE:
+"Enterprise Logic. Creative Pulse."
+
+BULLET POINTS:
+- Scalable Systems
+- Data-Driven Empathy
+- Future-Proof Tech
+
+Use existing typography scale and spacing rules.
+
+--------------------------------------------------
+7) FINAL CTA SECTION
+--------------------------------------------------
+HEADLINE:
+"Ready to upgrade your brand’s operating system?"
+
+BODY:
+"The digital world moves fast. Don’t let a broken architecture hold your business back."
+
+PRIMARY CTA BUTTON:
+"Book Your 15-Minute Strategy Audit"
+
+SUBTEXT:
+"A clear roadmap. No fluff. Guaranteed."
+
+--------------------------------------------------
+8) FINAL CHECKS
+--------------------------------------------------
+- Ensure page matches existing theme exactly
+- No inline styles unless project already uses them
+- Use existing animation / motion utilities if available
+- Add basic meta title & description for SEO
+- Test navbar link and CTA actions
+
+OUTPUT:
+Only modify files that are strictly necessary.

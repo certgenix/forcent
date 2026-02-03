@@ -154,6 +154,14 @@ export default function Navbar() {
                 Industries
               </span>
             </Link>
+            <Link href="/marketing">
+              <span 
+                className={`text-foreground font-medium hover:text-primary transition-colors cursor-pointer ${location === '/marketing' ? 'text-primary' : ''}`}
+                data-testid="link-marketing"
+              >
+                Marketing
+              </span>
+            </Link>
             <button
               onClick={() => scrollToSection('investment')}
               className="text-foreground font-medium hover:text-primary transition-colors"
@@ -231,6 +239,14 @@ export default function Navbar() {
                 data-testid="link-mobile-industries"
               >
                 Industries
+              </span>
+            </Link>
+            <Link href="/marketing" onClick={() => setMobileMenuOpen(false)}>
+              <span 
+                className={`block w-full text-left font-medium py-2 cursor-pointer ${location === '/marketing' ? 'text-primary' : 'text-foreground'}`}
+                data-testid="link-mobile-marketing"
+              >
+                Marketing
               </span>
             </Link>
             <button

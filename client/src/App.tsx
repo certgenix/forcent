@@ -14,6 +14,7 @@ import Construction from "@/pages/industries/Construction";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import ResponsibleAI from "@/pages/ResponsibleAI";
 import Solutions from "@/pages/Solutions";
+import Marketing from "@/pages/Marketing";
 import SoftwareDevelopment from "@/pages/solutions/SoftwareDevelopment";
 import DigitalTransformation from "@/pages/solutions/DigitalTransformation";
 import CybersecurityCompliance from "@/pages/solutions/CybersecurityCompliance";
@@ -34,6 +35,7 @@ function Router() {
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/responsible-ai" component={ResponsibleAI} />
       <Route path="/solutions" component={Solutions} />
+      <Route path="/marketing" component={Marketing} />
       <Route path="/solutions/software-development" component={SoftwareDevelopment} />
       <Route path="/solutions/digital-transformation" component={DigitalTransformation} />
       <Route path="/solutions/cybersecurity-compliance" component={CybersecurityCompliance} />
